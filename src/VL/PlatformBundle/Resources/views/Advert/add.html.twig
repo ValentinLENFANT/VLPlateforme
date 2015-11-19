@@ -1,0 +1,16 @@
+{# src/VL/PlatformBundle/Resources/views/Advert/add.html.twig #}
+
+{% extends "VLPlatformBundle::layout.html.twig" %}
+
+{% block vlplatform_body %}
+
+  <h2>Ajouter une annonce</h2>
+
+  {{ include("VLPlatformBundle:Advert:form.html.twig") }}
+
+  <p>
+    Attention : cette annonce sera ajoutée directement
+    sur la page d'accueil après validation du formulaire.
+  </p>
+
+{% endblock %}

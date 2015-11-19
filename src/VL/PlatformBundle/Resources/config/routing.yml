@@ -1,0 +1,27 @@
+vl_platform_home:
+    path:      /{page}
+    defaults:  { _controller: VLPlatformBundle:Advert:index, page: 1 }
+    requirements:
+        page: \d*
+
+vl_platform_view:
+    path:      /advert/{id}
+    defaults:  { _controller: VLPlatformBundle:Advert:view }
+    requirements:
+        id: \d+
+
+vl_platform_add:
+    path:      /add
+    defaults:  { _controller: VLPlatformBundle:Advert:add }
+
+vl_platform_edit:
+    path:      /edit/{id}
+    defaults:  { _controller: VLPlatformBundle:Advert:edit }
+    requirements:
+        id: \d+
+
+vl_platform_delete:
+    path:      /delete/{id}
+    defaults:  { _controller: VLPlatformBundle:Advert:delete }
+    requirements:
+        id: \d+
